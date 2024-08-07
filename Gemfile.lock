@@ -80,6 +80,7 @@ GEM
     autoprefixer-rails (10.4.16.0)
       execjs (~> 2)
     base64 (0.2.0)
+    bcrypt (3.1.18)
     bigdecimal (3.1.8)
     bindex (0.8.1)
     bootsnap (1.18.3)
@@ -111,7 +112,6 @@ GEM
     ffi (1.17.0-arm-linux-gnu)
     ffi (1.17.0-arm64-darwin)
     ffi (1.17.0-x86-linux-gnu)
-    ffi (1.17.0-x86_64-darwin)
     ffi (1.17.0-x86_64-linux-gnu)
     globalid (1.2.1)
       activesupport (>= 6.1)
@@ -161,8 +161,6 @@ GEM
     nokogiri (1.16.6-arm64-darwin)
       racc (~> 1.4)
     nokogiri (1.16.6-x86-linux)
-      racc (~> 1.4)
-    nokogiri (1.16.6-x86_64-darwin)
       racc (~> 1.4)
     nokogiri (1.16.6-x86_64-linux)
       racc (~> 1.4)
@@ -264,10 +262,11 @@ PLATFORMS
   arm-linux
   arm64-darwin
   x86-linux
-  x86_64-darwin
+  x86_64-linux
   x86_64-linux-gnu
 
 DEPENDENCIES
+  bcrypt (= 3.1.18)
   bootsnap (>= 1.4.4)
   bootstrap-sass (= 3.4.1)
   capybara
@@ -285,7 +284,7 @@ DEPENDENCIES
   web-console
 
 RUBY VERSION
-   ruby 3.2.3p157
+   ruby 3.2.2p53
 
 BUNDLED WITH
    2.5.14
