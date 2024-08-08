@@ -87,4 +87,7 @@ aside {
 .field_with_errors .form-control {
   color: $state-danger-text; /* Đảm bảo $state-danger-text được định nghĩa trong biến của bạn */
 }
-
+/* Dropdown menu */
+.dropdown-menu.active{
+  display: block;
+}
